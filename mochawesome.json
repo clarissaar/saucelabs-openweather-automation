@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 0,
+    "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2021-08-29T18:37:19.550Z",
-    "end": "2021-08-29T18:37:20.185Z",
-    "duration": 635,
+    "failures": 0,
+    "start": "2021-08-29T19:11:10.305Z",
+    "end": "2021-08-29T19:11:11.067Z",
+    "duration": 762,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,46 +18,61 @@
   },
   "results": [
     {
-      "uuid": "2d5e8006-19ad-425e-9dab-7893ec0ea8f5",
+      "uuid": "2b2c5f14-374f-4fd7-959d-0601fef9483d",
       "title": "",
       "fullFile": "cypress/integration/api/weather.js",
       "file": "cypress/integration/api/weather.js",
       "beforeHooks": [],
       "afterHooks": [],
-      "tests": [
+      "tests": [],
+      "suites": [
         {
-          "title": "An uncaught error was detected outside of a test",
-          "fullTitle": "An uncaught error was detected outside of a test",
-          "timedOut": null,
-          "duration": 450,
-          "state": "failed",
-          "speed": null,
-          "pass": false,
-          "fail": true,
-          "pending": false,
-          "context": null,
-          "code": "throw err;",
-          "err": {
-            "message": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
-            "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at Object../node_modules/ci-info/index.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:74683:13)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)\n    at Object../node_modules/is-ci/index.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:104191:18)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)\n    at Object.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:86145:14)\n    at Object../node_modules/cypress/lib/util.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:86605:30)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)\n    at Object.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:82138:14)\n    at Object../node_modules/cypress/index.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:82167:30)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)",
-            "diff": null
-          },
-          "uuid": "2f9ce5ab-6004-4eb5-94dc-8a7dc000ee40",
-          "parentUUID": "2d5e8006-19ad-425e-9dab-7893ec0ea8f5",
-          "isHook": false,
-          "skipped": false
+          "uuid": "532a88dd-556f-4c46-a5ad-a5e9b504d450",
+          "title": "Open Weather API",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Get weather of London, UK",
+              "fullTitle": "Open Weather API Get weather of London, UK",
+              "timedOut": null,
+              "duration": 633,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let londonCode = 2643741;\nlet APIKey = \"731d5864ddf3ce5dcd66c932a7393924\";\ncy.request({\n  method: 'GET',\n  url: 'http://api.openweathermap.org/data/2.5/weather',\n  qs: {\n    id: londonCode,\n    appid: APIKey\n  }\n}).then(response => {\n  console.log(response);\n  expect(response.status).to.eq(200);\n  expect(response.body.id).to.eq(londonCode);\n  expect(response.body).to.have.all.keys('base', 'clouds', 'cod', 'coord', 'dt', 'id', 'main', 'name', 'sys', 'timezone', 'visibility', 'weather', 'wind');\n  assert.isObject(response.body.clouds, 'val is object');\n  expect(response.body.clouds).to.have.keys('all');\n  assert.isObject(response.body.coord, 'val is object');\n  expect(response.body.coord).to.have.keys('lat', 'lon');\n  assert.isObject(response.body.main, 'val is object');\n  expect(response.body.main).to.have.keys('feels_like', 'humidity', 'pressure', 'temp', 'temp_max', 'temp_min');\n  assert.isObject(response.body.sys, 'val is object');\n  expect(response.body.sys).to.have.keys('country', 'id', 'sunrise', 'sunset', 'type');\n  assert.isObject(response.body.wind, 'val is object');\n  expect(response.body.wind).to.have.keys('speed', 'deg', 'gust');\n  assert.isArray(response.body.weather, 'val is array');\n});",
+              "err": {},
+              "uuid": "bb0e8d70-8a82-4230-ac4e-a3c4fffab520",
+              "parentUUID": "532a88dd-556f-4c46-a5ad-a5e9b504d450",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bb0e8d70-8a82-4230-ac4e-a3c4fffab520"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 633,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
         }
       ],
-      "suites": [],
       "passes": [],
-      "failures": [
-        "2f9ce5ab-6004-4eb5-94dc-8a7dc000ee40"
-      ],
+      "failures": [],
       "pending": [],
       "skipped": [],
-      "duration": 450,
+      "duration": 0,
       "root": true,
-      "rootEmpty": false,
+      "rootEmpty": true,
       "_timeout": 2000
     }
   ],
