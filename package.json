@@ -5,7 +5,7 @@
   "scripts": {
     "cy:open": "npx cypress open",
     "cy:run": "npx cypress run",
-    "report:merge": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+    "report:merge": "mochawesome-merge > index.json",
     "report:mocha": "marge index.json",
     "report:clean": "rimraf mochawesome-report index.json"
   },
