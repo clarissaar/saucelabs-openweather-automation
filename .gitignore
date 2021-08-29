@@ -4,3 +4,4 @@ node_modules/
 #Cypress
 cypress/videos
 cypress/screenshots
+cypress/mochawesome-reports
