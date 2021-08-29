@@ -6,8 +6,6 @@
     "reporterOptions": {
         "overwrite": false,
         "html": false,
-        "json": true,
-        "reportDir": "cypress/reports/mocha",
-        "quite": true
+        "json": true
     }
 }
