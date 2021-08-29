@@ -20,7 +20,7 @@ This project was designed using following concepts:
 
 ### Continuous Integration
 
-Setup through github actions, for each pull requested merged in *master* branch. Once all tests had passed, application is good to go to production in a Continuous Deployment environment. 
+Setup already configured through [github actions](https://github.com/features/actions) for each pull requested merged in *master* branch. Once all tests had passed, application is good to go to production in a Continuous Deployment environment. The test results aim to be published in a github page, but once this repo is private and free account it's not allowed.
 
 
 

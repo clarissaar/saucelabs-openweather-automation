@@ -1,0 +1,89 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-08-29T18:37:19.550Z",
+    "end": "2021-08-29T18:37:20.185Z",
+    "duration": 635,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2d5e8006-19ad-425e-9dab-7893ec0ea8f5",
+      "title": "",
+      "fullFile": "cypress/integration/api/weather.js",
+      "file": "cypress/integration/api/weather.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 450,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "throw err;",
+          "err": {
+            "message": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
+            "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at Object../node_modules/ci-info/index.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:74683:13)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)\n    at Object../node_modules/is-ci/index.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:104191:18)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)\n    at Object.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:86145:14)\n    at Object../node_modules/cypress/lib/util.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:86605:30)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)\n    at Object.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:82138:14)\n    at Object../node_modules/cypress/index.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:82167:30)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)",
+            "diff": null
+          },
+          "uuid": "2f9ce5ab-6004-4eb5-94dc-8a7dc000ee40",
+          "parentUUID": "2d5e8006-19ad-425e-9dab-7893ec0ea8f5",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "2f9ce5ab-6004-4eb5-94dc-8a7dc000ee40"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 450,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
