@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-08-29T19:11:14.584Z",
-    "end": "2021-08-29T19:11:19.841Z",
-    "duration": 5257,
+    "start": "2021-08-29T19:12:15.406Z",
+    "end": "2021-08-29T19:12:20.275Z",
+    "duration": 4869,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "dd234fd3-6256-42c2-82c2-35f505c5e0cc",
+      "uuid": "7c876147-4477-4c5e-b5b6-f1a527715b3c",
       "title": "",
       "fullFile": "cypress/integration/ui/purchaseProducts.js",
       "file": "cypress/integration/ui/purchaseProducts.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3bd65da8-51d3-4600-9899-cb6d0556b150",
+          "uuid": "4b758ef9-35bb-42ff-b896-1fa7e115e229",
           "title": "Purchase Products",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Purchase All T-Shirts",
               "fullTitle": "Purchase Products Purchase All T-Shirts",
               "timedOut": null,
-              "duration": 5115,
+              "duration": 4839,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "(0, _productsPage.selectAllTshirts)();\n(0, _checkoutPage.purchaseAllTshirts)();\n(0, _checkoutPage.fillCheckoutInfo)('Clarissa', 'Rodrigues', '30000');",
               "err": {},
-              "uuid": "2419f2d4-65c5-4b7c-858e-41835300e36e",
-              "parentUUID": "3bd65da8-51d3-4600-9899-cb6d0556b150",
+              "uuid": "55f5f7cf-2a2c-4c7f-828d-d051a77221ae",
+              "parentUUID": "4b758ef9-35bb-42ff-b896-1fa7e115e229",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2419f2d4-65c5-4b7c-858e-41835300e36e"
+            "55f5f7cf-2a2c-4c7f-828d-d051a77221ae"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5115,
+          "duration": 4839,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
