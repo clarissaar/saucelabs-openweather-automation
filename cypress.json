@@ -1,5 +1,13 @@
 {
     "baseUrl": "https://www.saucedemo.com",
     "defaultCommandTimeout": 10000,
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/mocha",
+        "quite": true
+    }
 }
