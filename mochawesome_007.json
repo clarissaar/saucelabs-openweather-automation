@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2021-08-29T18:37:40.509Z",
-    "end": "2021-08-29T18:37:41.158Z",
-    "duration": 649,
+    "start": "2021-08-29T18:50:15.098Z",
+    "end": "2021-08-29T18:50:15.589Z",
+    "duration": 491,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "07f64323-05ef-46be-80b0-42e8a7c445e2",
+      "uuid": "ff2ae359-26a0-4eec-86af-0944b573ed5b",
       "title": "",
       "fullFile": "cypress/integration/ui/purchaseProducts.js",
       "file": "cypress/integration/ui/purchaseProducts.js",
@@ -29,7 +29,7 @@
           "title": "An uncaught error was detected outside of a test",
           "fullTitle": "An uncaught error was detected outside of a test",
           "timedOut": null,
-          "duration": 479,
+          "duration": 350,
           "state": "failed",
           "speed": null,
           "pass": false,
@@ -39,11 +39,11 @@
           "code": "throw err;",
           "err": {
             "message": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.",
-            "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at Object../node_modules/ci-info/index.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:74683:13)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)\n    at Object../node_modules/is-ci/index.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:104191:18)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)\n    at Object.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:86145:14)\n    at Object../node_modules/cypress/lib/util.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:86605:30)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)\n    at Object.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:82138:14)\n    at Object../node_modules/cypress/index.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:82167:30)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)",
+            "estack": "ReferenceError: The following error originated from your test code, not from Cypress.\n\n  > process is not defined\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n    at Object../node_modules/ci-info/index.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:74692:13)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)\n    at Object../node_modules/is-ci/index.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:104200:18)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)\n    at Object.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:86154:14)\n    at Object../node_modules/cypress/lib/util.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:86614:30)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)\n    at Object.eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:82147:14)\n    at Object../node_modules/cypress/index.js (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:82176:30)\n    at __webpack_require__ (https://www.saucedemo.com/__cypress/tests?p=cypress\\support\\index.js:20:30)",
             "diff": null
           },
-          "uuid": "9db783aa-7d73-4338-821b-fdc686dbf8f7",
-          "parentUUID": "07f64323-05ef-46be-80b0-42e8a7c445e2",
+          "uuid": "f17daa73-0325-4703-a832-1bb0d2e14419",
+          "parentUUID": "ff2ae359-26a0-4eec-86af-0944b573ed5b",
           "isHook": false,
           "skipped": false
         }
@@ -51,11 +51,11 @@
       "suites": [],
       "passes": [],
       "failures": [
-        "9db783aa-7d73-4338-821b-fdc686dbf8f7"
+        "f17daa73-0325-4703-a832-1bb0d2e14419"
       ],
       "pending": [],
       "skipped": [],
-      "duration": 479,
+      "duration": 350,
       "root": true,
       "rootEmpty": false,
       "_timeout": 2000
