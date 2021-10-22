@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-08-29T19:12:11.045Z",
-    "end": "2021-08-29T19:12:11.686Z",
-    "duration": 641,
+    "start": "2021-10-22T02:40:02.536Z",
+    "end": "2021-10-22T02:40:03.456Z",
+    "duration": 920,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "834f0bae-1ee9-46c4-bdc6-9a9ecc17256a",
+      "uuid": "a8c1c27a-8062-4601-9751-c814b3e5d209",
       "title": "",
       "fullFile": "cypress/integration/api/weather.js",
       "file": "cypress/integration/api/weather.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "dcaff3e6-4112-4d04-902b-4afa6b62d43d",
+          "uuid": "2c00e0c3-357f-4a3f-a3a4-dc9b49d7f7ff",
           "title": "Open Weather API",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Get weather of London, UK",
               "fullTitle": "Open Weather API Get weather of London, UK",
               "timedOut": null,
-              "duration": 498,
+              "duration": 812,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "let londonCode = 2643741;\nlet APIKey = \"731d5864ddf3ce5dcd66c932a7393924\";\ncy.request({\n  method: 'GET',\n  url: 'http://api.openweathermap.org/data/2.5/weather',\n  qs: {\n    id: londonCode,\n    appid: APIKey\n  }\n}).then(response => {\n  console.log(response);\n  expect(response.status).to.eq(200);\n  expect(response.body.id).to.eq(londonCode);\n  expect(response.body).to.have.all.keys('base', 'clouds', 'cod', 'coord', 'dt', 'id', 'main', 'name', 'sys', 'timezone', 'visibility', 'weather', 'wind');\n  assert.isObject(response.body.clouds, 'val is object');\n  expect(response.body.clouds).to.have.keys('all');\n  assert.isObject(response.body.coord, 'val is object');\n  expect(response.body.coord).to.have.keys('lat', 'lon');\n  assert.isObject(response.body.main, 'val is object');\n  expect(response.body.main).to.have.keys('feels_like', 'humidity', 'pressure', 'temp', 'temp_max', 'temp_min');\n  assert.isObject(response.body.sys, 'val is object');\n  expect(response.body.sys).to.have.keys('country', 'id', 'sunrise', 'sunset', 'type');\n  assert.isObject(response.body.wind, 'val is object');\n  expect(response.body.wind).to.have.keys('speed', 'deg', 'gust');\n  assert.isArray(response.body.weather, 'val is array');\n});",
               "err": {},
-              "uuid": "b5457fc1-acc1-4ba8-adeb-e331c411d6da",
-              "parentUUID": "dcaff3e6-4112-4d04-902b-4afa6b62d43d",
+              "uuid": "41b5e27d-4db4-4cc3-8c7a-e8ebb82427d0",
+              "parentUUID": "2c00e0c3-357f-4a3f-a3a4-dc9b49d7f7ff",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "b5457fc1-acc1-4ba8-adeb-e331c411d6da"
+            "41b5e27d-4db4-4cc3-8c7a-e8ebb82427d0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 498,
+          "duration": 812,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -90,7 +90,7 @@
         "useInlineDiffs": false,
         "code": true
       },
-      "version": "6.2.2"
+      "version": "6.3.1"
     },
     "marge": {
       "options": {

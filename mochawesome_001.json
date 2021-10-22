@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-08-29T19:12:15.406Z",
-    "end": "2021-08-29T19:12:20.275Z",
-    "duration": 4869,
+    "start": "2021-10-22T02:40:07.154Z",
+    "end": "2021-10-22T02:40:12.555Z",
+    "duration": 5401,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7c876147-4477-4c5e-b5b6-f1a527715b3c",
+      "uuid": "ceab8ae6-4d30-4b5b-9efb-db670849f664",
       "title": "",
       "fullFile": "cypress/integration/ui/purchaseProducts.js",
       "file": "cypress/integration/ui/purchaseProducts.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4b758ef9-35bb-42ff-b896-1fa7e115e229",
+          "uuid": "b6d0e89d-dd40-4c8e-8f8f-ea1a9244c118",
           "title": "Purchase Products",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Purchase All T-Shirts",
               "fullTitle": "Purchase Products Purchase All T-Shirts",
               "timedOut": null,
-              "duration": 4839,
+              "duration": 5249,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "(0, _productsPage.selectAllTshirts)();\n(0, _checkoutPage.purchaseAllTshirts)();\n(0, _checkoutPage.fillCheckoutInfo)('Clarissa', 'Rodrigues', '30000');",
               "err": {},
-              "uuid": "55f5f7cf-2a2c-4c7f-828d-d051a77221ae",
-              "parentUUID": "4b758ef9-35bb-42ff-b896-1fa7e115e229",
+              "uuid": "297e947f-16c7-44d6-8ab4-3058d13942f6",
+              "parentUUID": "b6d0e89d-dd40-4c8e-8f8f-ea1a9244c118",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "55f5f7cf-2a2c-4c7f-828d-d051a77221ae"
+            "297e947f-16c7-44d6-8ab4-3058d13942f6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4839,
+          "duration": 5249,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -90,7 +90,7 @@
         "useInlineDiffs": false,
         "code": true
       },
-      "version": "6.2.2"
+      "version": "6.3.1"
     },
     "marge": {
       "options": {
